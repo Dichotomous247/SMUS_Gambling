@@ -25,5 +25,21 @@
             </div>
           </div>
         </nav>
+        <div class="container mt-5">
+          <h1>Place Your Bet</h1>
+          <form id="betForm">
+              <div class="mb-3">
+                  <label for="betTitle" class="form-label">Bet Title</label>
+                  <input type="text" class="form-control" id="betTitle" required>
+              </div>
+              <div class="mb-3">
+                  <label for="betDescription" class="form-label">Bet Description</label>
+                  <textarea class="form-control" id="betDescription" rows="3" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">Submit Bet</button>
+          </form>
+      </div>
+      <script src="createbet.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   </body>
 </html>

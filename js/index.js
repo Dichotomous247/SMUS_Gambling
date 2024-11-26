@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function() {
           <div class="card-body">
               <h5 class="card-title">${newBet.title}</h5>
               <p class="card-text">${newBet.description}</p>
-              <a href="bet.html" class="btn btn-primary">Bet</a>
+              <a href="new_bets.html" class="btn btn-primary">Bet</a>
           </div>
       `;
       betsContainer.appendChild(betCard);
