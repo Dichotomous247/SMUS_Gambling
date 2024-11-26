@@ -30,11 +30,19 @@
           <form id="betForm">
               <div class="mb-3">
                   <label for="betTitle" class="form-label">Bet Title</label>
-                  <input type="text" class="form-control" id="betTitle" required>
+                  <select class="form-select" id="betTitle" required>
+                      <option value="" disabled selected>Select a bet</option>
+                      <option value="A">SMUS Win</option>
+                      <option value="B">Other School Win</option>
+                  </select>
               </div>
               <div class="mb-3">
                   <label for="betDescription" class="form-label">Bet Description</label>
                   <textarea class="form-control" id="betDescription" rows="3" required></textarea>
+              </div>
+              <div class="mb-3">
+                  <label for="betAmount" class="form-label">Amount (in Ethereum)</label>
+                  <input type="number" class="form-control" id="betAmount" step="0.01" required>
               </div>
               <button type="submit" class="btn btn-primary">Submit Bet</button>
           </form>

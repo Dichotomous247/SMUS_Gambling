@@ -2,6 +2,7 @@ function currentBets() {
   window.location.href = "index.js";
 }
 
+<<<<<<< HEAD
 document.addEventListener('DOMContentLoaded', function() {
   const newBet = JSON.parse(localStorage.getItem('newBet'));
   if (newBet) {
@@ -20,3 +21,11 @@ document.addEventListener('DOMContentLoaded', function() {
       localStorage.removeItem('newBet');
   }
 });
+=======
+const myModal = document.getElementById("myModal");
+const myInput = document.getElementById("myInput");
+
+myModal.addEventListener("shown.bs.modal", () => {
+  myInput.focus();
+});
+>>>>>>> 272b15aace0fbad4c20bd6c0d35ad32597605ea2
